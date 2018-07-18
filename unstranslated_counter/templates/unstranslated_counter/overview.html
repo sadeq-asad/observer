@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media Observer</title>
+</head>
+<body>
+	<ul>
+		{% for key, value in results.items %}
+		{% if value > 0 %}
+			<li>{{ key }}:  <font color="red">{{ value }}</font></li>
+		{% else %}
+			<li>{{ key }}:  <font color="green">{{ value }}</font></li>
+		{% endif %}
+		{% endfor %}
+	</ul>
+</body>
+</html>
