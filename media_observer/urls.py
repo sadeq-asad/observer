@@ -19,5 +19,5 @@ from django.conf.urls import include, url
 
 urlpatterns = [
     url('admin/', admin.site.urls),
-    url(r'counter/', include('unstranslated_counter.urls')),
+    url('counter/', include('unstranslated_counter.urls')),
 ]

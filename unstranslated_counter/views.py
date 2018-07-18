@@ -1,11 +1,12 @@
 from django.shortcuts import render, HttpResponse
-import requests
+from . import requests
 
 # Create your views here.
 login_page = 'http://office.mediaobserver-me.com:882/checkuser.php'
 # client = orange (customers=173)
 credentials = {'username':'s.asref','password':'123456'}
-accounts = {'LG':166, 'Orange':173, 'ACT':167, 'Emaar':177, 'AIG4':288, 'Crescent':307, 'Pearl':334, 'HBKU':366, 'Total':624, 'Westin':658, 'Bein':856, 'Fine':910, 'Alan':1050, 'DB':1052, 'DCCI-tr':1132, 'AIG_clips':1352, 'Danube':1750, 'USAID':1826, 'Memac':2060, 'Disney':211}
+accounts = {'LG':166, 'Orange':173}
+#'ACT':167, 'Emaar':177, 'AIG4':288, 'Crescent':307, 'Pearl':334, 'HBKU':366, 'Total':624, 'Westin':658, 'Bein':856, 'Fine':910, 'Alan':1050, 'DB':1052, 'DCCI-tr':1132, 'AIG_clips':1352, 'Danube':1750, 'USAID':1826, 'Memac':2060, 'Disney':211}
 
 def overview(request):  
     # create session, enter credentials, get and render cookies
